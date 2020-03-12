@@ -1,0 +1,68 @@
+$font-family: "San Francisco", -apple-system, BlinkMacSystemFont, "Roboto",
+  "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif;
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Gilroy Regular"), local("Gilroy-Regular"),
+    url("../fonts/Gilroy-Regular.woff2") format("woff2"),
+    url("../fonts/Gilroy-Regular.woff") format("woff"),
+    url("../fonts/Gilroy-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Gilroy Bold"), local("Gilroy-Bold"),
+    url("../fonts/Gilroy-Bold.woff2") format("woff2"),
+    url("../fonts/Gilroy-Bold.woff") format("woff"),
+    url("../fonts/Gilroy-Bold.ttf") format("truetype");
+}
+
+$custom-font: "Gilroy";
+
+$font-size: 16px;
+$line-height: 1.65;
+
+// H-sizing
+$font-size--h1: 40px;
+$font-size--h2: 35px;
+$font-size--h3: 30px;
+
+body {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-family: $custom-font, $font-family;
+  color: $text-color;
+}
+
+h1 {
+  font-size: $font-size--h1;
+  font-weight: 700;
+  // line-height: ;
+}
+
+h2 {
+  font-size: ($font-size--h2);
+  font-weight: 700;
+  // line-height: ;
+}
+
+h3 {
+  font-size: $font-size--h3;
+  font-weight: 700;
+  // line-height: ;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+button {
+  font-family: $custom-font, $font-family;
+}

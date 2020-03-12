@@ -1,0 +1,68 @@
+$burger-size: 25px;
+$burger-line-height: 2px;
+$burger-line-color: #000000;
+$burger-line-color--hover: $accent-color;
+$burger-line-color--active: $accent-color--active;
+
+.burger {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: $burger-size;
+  height: $burger-size / 1.4;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+
+  $block-name: &; // #{$block-name}__element {}
+
+  &:hover {
+    #{$block-name}_line {
+      background-color: $burger-line-color--hover;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.active {
+    #{$block-name}_line-top {
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    #{$block-name}_line-middle {
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    #{$block-name}_line-bottom {
+      bottom: 50%;
+      transform: translateY(50%) rotate(-45deg);
+    }
+  }
+
+  &_line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: $burger-line-height;
+    background-color: $burger-line-color;
+    border-radius: $burger-line-height;
+    transition: all 0.2s $base-easing;
+  }
+
+  &_line-top {
+    top: 0;
+  }
+
+  &_line-middle {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &_line-bottom {
+    bottom: 0;
+  }
+}

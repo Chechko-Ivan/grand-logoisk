@@ -1,0 +1,30 @@
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0;
+  border: 0;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  user-select: none;
+  text-align: center;
+  font-size: 1em;
+  font-family: inherit;
+  text-decoration: none;
+  text-transform: none;
+  color: $text-color;
+  background-image: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+  }
+
+  &:active {
+  }
+
+  &:disabled {
+  }
+}

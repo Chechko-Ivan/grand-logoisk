@@ -1,0 +1,49 @@
+$close-size: 25px;
+$close-line-height: 2px;
+$close-line-color: #000000;
+$close-line-color--hover: $accent-color;
+$close-line-color--active: $accent-color--active;
+
+.close {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: $close-size;
+  height: $close-size;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+
+  $block-name: &; // #{$block-name}__element {}
+
+  &:hover {
+    &::before,
+    &::after {
+      background-color: $close-line-color--hover;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: $close-line-height;
+    background-color: $close-line-color;
+    transition: background-color 0.2s $base-easing;
+  }
+
+  &::before {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+}

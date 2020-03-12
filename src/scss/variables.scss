@@ -1,0 +1,40 @@
+// Main Color
+$black: #000000;
+$gray1: #191919;
+$gray2: #2c2c2c;
+$gray3: #3f3f3f;
+$gray4: #545454;
+$gray5: #6a6a6a;
+$gray6: #808080;
+$gray7: #949494;
+$gray8: #a9a9a9;
+$gray9: #bdbebd;
+$gray10: #d3d3d3;
+$gray11: #e9e9e9;
+$white: #ffffff;
+
+$red: #ff3b30;
+$green: #4cd964;
+$blue: #007aff;
+$orange: #ff9500;
+$yellow: #ffcc00;
+$teal: #5ac8fa;
+$purple: #5856d6;
+$purple: #ff2d55;
+
+// Base Elements Color
+$lighten: 5%;
+$darken: 3%;
+
+$accent-color: $red;
+$accent-color--hover: lighten($red, $lighten);
+$accent-color--active: darken($red, $darken);
+$success-color: $green;
+$warning-color: $yellow;
+$error-color: $red;
+
+$text-color: $black;
+$text-color--muted: lighten($black, $lighten);
+
+// Base easing
+$base-easing: cubic-bezier(0.77, 0, 0.175, 1);
