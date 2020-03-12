@@ -20,7 +20,7 @@
     "./node_modules/bootstrap/scss/_transitions.scss",
     "./node_modules/bootstrap/scss/_modal.scss"
   ],
-  "addCssAfter": [],
+  "addCssAfter": ["./src/css/style.scss"],
   "singleCompiled": [],
   "addJsBefore": [
     "./node_modules/jquery/dist/jquery.min.js",
@@ -29,13 +29,8 @@
     "./node_modules/bootstrap/js/dist/util.js",
     "./node_modules/bootstrap/js/dist/modal.js"
   ],
-  "addJsAfter": [
-    "./src/js/global-script.js",
-    "./src/js/util.js"
-  ],
-  "addImages": [
-    "./src/img/*.{jpg,jpeg,gif,png,svg,ico}"
-  ],
+  "addJsAfter": ["./src/js/global-script.js", "./src/js/util.js"],
+  "addImages": ["./src/img/*.{jpg,jpeg,gif,png,svg,ico}"],
   "copiedJs": [],
   "copiedCss": [],
   "dirs": {

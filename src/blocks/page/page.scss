@@ -51,6 +51,14 @@ textarea {
   touch-action: manipulation;
 }
 
+a {
+  text-decoration: none !important;
+}
+
+button {
+  outline: none !important;
+}
+
 img {
   max-width: 100%;
   height: auto;

@@ -1,5 +1,86 @@
 .page-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+}
 
-  $block-name:       &; // #{$block-name}__element {}
+.contacts-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
+  li {
+    &:not(:last-of-type) {
+      margin-right: 55px;
+    }
+  }
+
+  a {
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    transition: color 0.25s ease;
+
+    &:hover {
+      color: #fdbe11;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0 40px;
+  background-color: #ffffff;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+
+  li {
+    &:not(:last-of-type) {
+      margin-right: 40px;
+    }
+  }
+
+  a {
+    position: relative;
+    display: block;
+    height: 80px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 80px;
+    color: #000000;
+
+    &:hover {
+      &:before {
+        height: 4px;
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      background-color: #fdbe11;
+      transition: height 0.25s ease;
+    }
+  }
 }

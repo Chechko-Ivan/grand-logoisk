@@ -1,28 +1,161 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <title>Site Title</title>
-    <meta name="description" content />
-    @@include('_include/page_head.html')
 
-    <link
-      rel="preload"
-      href="fonts/Gilroy-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="fonts/Gilroy-Bold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <title>Site Title</title>
+  <meta name="description" content />
+  @@include('_include/page_head.html')
 
-  <body id="page-home">
-    @@include('_include/page_bottom.html')
-  </body>
+  <link rel="preload" href="fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/Gilroy-Bold.woff2" as="font" type="font/woff2" crossorigin />
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ul class="contacts-list">
+            <li>
+              <a href="mailto:proinvestor@bk.ru">
+                proinvestor@bk.ru
+              </a>
+            </li>
+            <li>
+              <a href="tel:+37529616-04-04">
+                +375 (29) 616-04-04
+              </a>
+            </li>
+            <li>
+              <a href="tel:+37533616-04-04">
+                +375 (33) 616-04-04
+              </a>
+            </li>
+            <li>
+              <a href="tel:+37525616-04-04">
+                +375 (25) 616-04-04
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <nav class="nav">
+            <a href="/" class="logo">
+              ГрандЛогойскСтрой
+            </a>
+
+            <ul class="nav-list">
+              <li>
+                <a href="#location" data-scroll-link="location">
+                  Расположение
+                </a>
+              </li>
+              <li>
+                <a href="#about" data-scroll-link="about">
+                  О проекте
+                </a>
+              </li>
+              <li>
+                <a href="#advantage" data-scroll-link="advantage">
+                  Преимущества
+                </a>
+              </li>
+              <li>
+                <a href="#layout" data-scroll-link="layout">
+                  Планировка
+                </a>
+              </li>
+              <li>
+                <a href="#contacts" data-scroll-link="contacts">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main" style="background-image: url('./img/main-banner.jpg');">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Старт продаж в апреле 2020 года</h1>
+          <a href="#contacts" class="button" data-scroll-link="contacts">
+            Задать вопрос
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <ul class="page-main-advantages">
+            <li>Современный дизайн</li>
+            <li>Цены от 1500 BYN за м²</li>
+            <li>Рассрочка</li>
+            <li>Кредит</li>
+            <li>
+              <a href="#location" data-scroll-link="location">
+                Узнать больше
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section id="location" class="s-offsets s-location">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="s-title">
+            Расположение
+          </h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="s-location-item">
+            <svg width="80" height="80">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#bus"></use>
+            </svg>
+            <span>
+              Шаговая доступность до остановки общественного транспорта
+            </span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="s-location-item">
+            <svg width="80" height="80">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#shopping-bag"></use>
+            </svg>
+            <span>
+              Шаговая доступность до остановки общественного транспорта
+            </span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="s-location-item">
+            <svg width="80" height="80">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#beach"></use>
+            </svg>
+            <span>
+              Шаговая доступность до остановки общественного транспорта
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @@include('_include/page_bottom.html')
+</body>
+
 </html>

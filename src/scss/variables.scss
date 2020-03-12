@@ -38,3 +38,23 @@ $text-color--muted: lighten($black, $lighten);
 
 // Base easing
 $base-easing: cubic-bezier(0.77, 0, 0.175, 1);
+
+$grid-gutter-width: 15px;
+$grid-columns: 12;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  osx: 1470px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px,
+  osx: 1440px
+);
