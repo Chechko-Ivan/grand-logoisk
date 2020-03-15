@@ -31,4 +31,15 @@
     background-color: #fdbe11;
     border: 2px solid #fdbe11;
   }
+
+  &.button-dark {
+    color: #000000;
+    background-color: transparent;
+    border: 1px solid #979797;
+
+    &:hover {
+      color: #ffffff;
+      border-color: #fdbe11;
+    }
+  }
 }

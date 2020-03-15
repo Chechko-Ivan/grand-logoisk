@@ -9,7 +9,7 @@ $(document).ready(function() {
         if (hash && hash !== "#") {
           e.preventDefault();
           var scroll = window.pageYOffset;
-          var targetTop = getOffsetRect(document.querySelector(hash)).top;
+          var targetTop = getOffsetRect(document.querySelector(hash)).top - 50;
           var scrollDiff = (scroll - targetTop) * -1;
           animate({
             duration: 500,
@@ -26,6 +26,7 @@ $(document).ready(function() {
       false
     );
   }
+
   function animate(_ref) {
     var timing = _ref.timing,
       draw = _ref.draw,
@@ -41,6 +42,7 @@ $(document).ready(function() {
       }
     });
   }
+
   function getOffsetRect(elem) {
     var box = elem.getBoundingClientRect();
     var body = document.body;
@@ -54,6 +56,18 @@ $(document).ready(function() {
     var left = box.left + scrollLeft - clientLeft;
     return { top: Math.round(top), left: Math.round(left) };
   }
+
+  var header = document.querySelector(".page-header");
+
+  window.addEventListener("scroll", function() {
+    if (pageYOffset > 0 && !header.classList.contains("full-width")) {
+      header.classList.add("full-width");
+    }
+
+    if (pageYOffset === 0) {
+      header.classList.remove("full-width");
+    }
+  });
 
   // Burger
   // $("#burger").click(toggleMenu);

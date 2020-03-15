@@ -9,6 +9,8 @@
 
   <link rel="preload" href="fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="fonts/Gilroy-Bold.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 </head>
 
 <body>
@@ -121,7 +123,7 @@
       </div>
 
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4 mb-md-0">
           <div class="s-location-item">
             <svg width="80" height="80">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#bus"></use>
@@ -131,7 +133,7 @@
             </span>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4 mb-md-0">
           <div class="s-location-item">
             <svg width="80" height="80">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#shopping-bag"></use>
@@ -141,7 +143,7 @@
             </span>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4 mb-md-0">
           <div class="s-location-item">
             <svg width="80" height="80">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#beach"></use>
@@ -152,10 +154,422 @@
           </div>
         </div>
       </div>
+
+      <div class="row map-row">
+        <div class="col-12">
+          <iframe class="map"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A84bf9e1b19a23235159ffad0651f3c5a1c2158425820226d82c2bb7c39f4dff4&amp;source=constructor&amp;scroll=false"
+            width="100%" height="450" frameborder="0"></iframe>
+        </div>
+      </div>
     </div>
   </section>
 
+  <section id="about" class="s-offsets s-about">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="s-title">
+            О проекте
+          </h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+          <div class="row mb-55">
+            <div class="col-sm-4 mb-4 mb-sm-0">
+              <div class="item-with-icon">
+                <svg width="80" height="80">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#key"></use>
+                </svg>
+                <h3 class="item-with-icon-title">Выдача ключей</h3>
+                <span class="item-with-icon-subtitle">декабрь 2020 года</span>
+              </div>
+            </div>
+
+            <div class="col-sm-4 mb-4 mb-sm-0">
+              <div class="item-with-icon">
+                <svg width="80" height="80">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#cube"></use>
+                </svg>
+                <h3 class="item-with-icon-title">Квадратный метр</h3>
+                <span class="item-with-icon-subtitle">от 1500 BYN</span>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="item-with-icon">
+                <svg width="80" height="80">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#triangular-ruler">
+                  </use>
+                </svg>
+                <h3 class="item-with-icon-title">Метраж квартир</h3>
+                <span class="item-with-icon-subtitle">25,55 - 80,94 м.кв.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Praesent semper feugiat nibh sed pulvinar proin. Ac tortor vitae purus faucibus
+                ornare suspendisse sed nisi lacus. Quam quisque id diam vel quam elementum pulvinar etiam non.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="./img/about-image.jpg" alt="О проекте">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="advantage" class="s-offsets s-advantage">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="s-title">
+            Новый уровень комфорта
+          </h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="order-2 order-md-1 col-md-6">
+          <img src="./img/advantage-image.jpg" alt="Новый уровень комфорта">
+        </div>
+
+        <div class="order-1 order-md-2 mb-4 mb-md-0 col-md-6 d-flex flex-column justify-content-center">
+          <div class="row">
+            <div class="col-sm-6 mb-55">
+              <div class="item-with-icon">
+                <svg width="80" height="80">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#verified"></use>
+                </svg>
+                <h3 class="item-with-icon-title">Двор без автомобилей</h3>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-55">
+              <div class="item-with-icon">
+                <svg width="80" height="80">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#verified"></use>
+                </svg>
+                <h3 class="item-with-icon-title">Отдельный паркинг</h3>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-4 mb-sm-0">
+              <div class="item-with-icon">
+                <svg width="80" height="80">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#verified"></use>
+                </svg>
+                <h3 class="item-with-icon-title">Крытая вело парковка</h3>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="item-with-icon">
+                <svg width="80" height="80">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#verified"></use>
+                </svg>
+                <h3 class="item-with-icon-title">Современная детская площадка</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="layout" class="s-offsets s-layout">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="s-title">
+            Новый уровень комфорта
+          </h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-md-3 mb-4 mb-md-0">
+          <div class="plan-card">
+            <h3 class="plan-card-title">
+              Квартира 25 м.кв.
+            </h3>
+            <span class="plan-card-subtitle">
+              Квартира 25 м.кв.
+            </span>
+            <div class="plan-card-image" style="background-image: url('./img/advantage-image.jpg');">
+              <svg class="plan-card-zoom-icon" width="50" height="50">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#zoom-in"></use>
+              </svg>
+            </div>
+            <span class="plan-card-price">Цена: 50 300 $</span>
+            <span class="plan-card-price-message">Возможно в рассрочку</span>
+            <button class="button button-dark">Условия</button>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-4 mb-md-0">
+          <div class="plan-card">
+            <h3 class="plan-card-title">
+              Квартира 25 м.кв.
+            </h3>
+            <span class="plan-card-subtitle">
+              Квартира 25 м.кв.
+            </span>
+            <div class="plan-card-image" style="background-image: url('./img/advantage-image.jpg');">
+              <svg class="plan-card-zoom-icon" width="50" height="50">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#zoom-in"></use>
+              </svg>
+            </div>
+            <span class="plan-card-price">Цена: 50 300 $</span>
+            <span class="plan-card-price-message">Возможно в рассрочку</span>
+            <button class="button button-dark">Условия</button>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-4 mb-sm-0">
+          <div class="plan-card">
+            <h3 class="plan-card-title">
+              Квартира 25 м.кв.
+            </h3>
+            <span class="plan-card-subtitle">
+              Квартира 25 м.кв.
+            </span>
+            <div class="plan-card-image" style="background-image: url('./img/advantage-image.jpg');">
+              <svg class="plan-card-zoom-icon" width="50" height="50">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#zoom-in"></use>
+              </svg>
+            </div>
+            <span class="plan-card-price">Цена: 50 300 $</span>
+            <span class="plan-card-price-message">Возможно в рассрочку</span>
+            <button class="button button-dark">Условия</button>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-4 mb-sm-0">
+          <div class="plan-card">
+            <h3 class="plan-card-title">
+              Квартира 25 м.кв.
+            </h3>
+            <span class="plan-card-subtitle">
+              Квартира 25 м.кв.
+            </span>
+            <div class="plan-card-image" style="background-image: url('./img/advantage-image.jpg');">
+              <svg class="plan-card-zoom-icon" width="50" height="50">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#zoom-in"></use>
+              </svg>
+            </div>
+            <span class="plan-card-price">Цена: 50 300 $</span>
+            <span class="plan-card-price-message">Возможно в рассрочку</span>
+            <button class="button button-dark">Условия</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s-offsets s-slider">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="s-title">
+            Характеристики квартир
+          </h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1 d-flex justify-content-start align-items-center">
+          <button class="slider-buttons slider-prev">
+            <svg width="45" height="38">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#left-arrow"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="col-10">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item-with-icon">
+                  <svg width="80" height="80">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#plans"></use>
+                  </svg>
+                  <h3 class="item-with-icon-title">Потолки 2.7 м.</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="item-with-icon">
+                  <svg width="80" height="80">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#draws"></use>
+                  </svg>
+                  <h3 class="item-with-icon-title">Стяжка пола</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="item-with-icon">
+                  <svg width="80" height="80">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#plastering"></use>
+                  </svg>
+                  <h3 class="item-with-icon-title">Штукатурка стен</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="item-with-icon">
+                  <svg width="80" height="80">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#window"></use>
+                  </svg>
+                  <h3 class="item-with-icon-title">Окна ПВХ</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="item-with-icon">
+                  <svg width="80" height="80">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#radiator"></use>
+                  </svg>
+                  <h3 class="item-with-icon-title">Радиаторы отопления</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="item-with-icon">
+                  <svg width="80" height="80">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#real-estate"></use>
+                  </svg>
+                  <h3 class="item-with-icon-title">Застекленная лоджия</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="item-with-icon">
+                  <svg width="80" height="80">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#domain"></use>
+                  </svg>
+                  <h3 class="item-with-icon-title">Интернет</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="item-with-icon">
+                  <svg width="80" height="80">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#intercom"></use>
+                  </svg>
+                  <h3 class="item-with-icon-title">Домофонная система</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="item-with-icon">
+                  <svg width="80" height="80">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#kitchen"></use>
+                  </svg>
+                  <h3 class="item-with-icon-title">Вывод под электро плиту</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1 d-flex justify-content-end align-items-center">
+          <button class="slider-buttons slider-next">
+            <svg width="45" height="38">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#right-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts" class="s-offsets s-contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="s-title">
+            Контакты
+          </h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <ul class="s-contacts-list">
+            <li>
+              <span>(A1)</span>
+              <a href="tel:+375296160404">
+                +375 (29) 616-04-04
+              </a>
+            </li>
+            <li>
+              <span>(MTC)</span>
+              <a href="tel:+375336160404">
+                +375 (33) 616-04-04
+              </a>
+            </li>
+            <li>
+              <span>(Life)</span>
+              <a href="tel:+375256160404">
+                +375 (25) 616-04-04
+              </a>
+            </li>
+            <li>
+              <a href="mailto:proinvestor@bk.ru">
+                proinvestor@bk.ru
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-5 mt-4 mt-md-0">
+          <h3 class="form-title">Есть вопросы? Оставьте заявку!</h3>
+          <form class="form">
+            <input type="text" name="name" placeholder="Ваше имя">
+            <input type="tel" name="tel" placeholder="Ваш номер телефона">
+
+            <button type="submit" class="button">
+              Заказать звонок
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <span>
+            ООО "ГрандЛогойскСтрой" УНП 690863159
+          </span>
+        </div>
+        <div class="col-sm-6 d-flex justify-content-center justify-content-sm-end">
+          <a href="http://maps.yandex.ru/?text=53.907530,27.590559" target="_blank">
+            г. Минск,ул. Краснозвездная, д.18Б, пом. 23-2
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   @@include('_include/page_bottom.html')
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      loop: true,
+      navigation: {
+        nextEl: '.slider-next',
+        prevEl: '.slider-prev',
+      },
+    })
+  </script>
 </body>
 
 </html>
