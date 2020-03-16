@@ -12,6 +12,7 @@ $close-line-color--active: $accent-color--active;
   height: $close-size;
   border: 0;
   cursor: pointer;
+  background-color: transparent;
   user-select: none;
 
   $block-name: &; // #{$block-name}__element {}
@@ -19,7 +20,7 @@ $close-line-color--active: $accent-color--active;
   &:hover {
     &::before,
     &::after {
-      background-color: $close-line-color--hover;
+      background-color: #fdbe11;
     }
   }
 

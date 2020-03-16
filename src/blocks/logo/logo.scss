@@ -3,6 +3,11 @@
   font-size: 30px;
   line-height: 1;
   color: #000000;
+  transition: color 0.25s ease;
+
+  &:hover {
+    color: #fdbe11;
+  }
 
   @include media-breakpoint-down(lg) {
     font-size: 25px;

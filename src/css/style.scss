@@ -180,10 +180,10 @@ svg {
   position: relative;
   width: 100%;
   height: 280px;
-  background-color: #d8d8d8;
+  // background-color: #d8d8d8;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   border: 1px solid #979797;
   cursor: pointer;
 
@@ -377,4 +377,16 @@ svg {
   a {
     color: #fdbe11;
   }
+}
+
+.modal {
+  .modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+}
+
+.modal-content {
+  padding: 55px 25px 32.5px;
 }

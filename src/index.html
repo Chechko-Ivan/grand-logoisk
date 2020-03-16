@@ -3,14 +3,14 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Site Title</title>
+  <title>ГрандЛогойскСтрой</title>
   <meta name="description" content />
   @@include('_include/page_head.html')
 
   <link rel="preload" href="fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="fonts/Gilroy-Bold.woff2" as="font" type="font/woff2" crossorigin />
 
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
 </head>
 
 <body>
@@ -100,7 +100,6 @@
             <li>Современный дизайн</li>
             <li>Цены от 1500 BYN за м²</li>
             <li>Рассрочка</li>
-            <li>Кредит</li>
             <li>
               <a href="#location" data-scroll-link="location">
                 Узнать больше
@@ -213,15 +212,17 @@
           <div class="row">
             <div class="col-12">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Praesent semper feugiat nibh sed pulvinar proin. Ac tortor vitae purus faucibus
-                ornare suspendisse sed nisi lacus. Quam quisque id diam vel quam elementum pulvinar etiam non.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Praesent semper feugiat nibh sed pulvinar proin. Ac tortor
+                vitae purus faucibus ornare suspendisse sed nisi lacus. Quam
+                quisque id diam vel quam elementum pulvinar etiam non.
               </p>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <img src="./img/about-image.jpg" alt="О проекте">
+          <img src="./img/about-image.jpg" alt="О проекте" />
         </div>
       </div>
     </div>
@@ -239,7 +240,7 @@
 
       <div class="row">
         <div class="order-2 order-md-1 col-md-6">
-          <img src="./img/advantage-image.jpg" alt="Новый уровень комфорта">
+          <img src="./img/advantage-image.jpg" alt="Новый уровень комфорта" />
         </div>
 
         <div class="order-1 order-md-2 mb-4 mb-md-0 col-md-6 d-flex flex-column justify-content-center">
@@ -273,7 +274,9 @@
                 <svg width="80" height="80">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#verified"></use>
                 </svg>
-                <h3 class="item-with-icon-title">Современная детская площадка</h3>
+                <h3 class="item-with-icon-title">
+                  Современная детская площадка
+                </h3>
               </div>
             </div>
           </div>
@@ -301,68 +304,75 @@
             <span class="plan-card-subtitle">
               Квартира 25 м.кв.
             </span>
-            <div class="plan-card-image" style="background-image: url('./img/advantage-image.jpg');">
+            <div class="plan-card-image" style="background-image: url('./img/layout-25.png');" data-toggle="modal"
+              data-target="#layout1">
               <svg class="plan-card-zoom-icon" width="50" height="50">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#zoom-in"></use>
               </svg>
             </div>
             <span class="plan-card-price">Цена: 50 300 $</span>
             <span class="plan-card-price-message">Возможно в рассрочку</span>
-            <button class="button button-dark">Условия</button>
+            <button class="button button-dark" data-toggle="modal" data-target="#condition">Узнать условия</button>
           </div>
         </div>
+
         <div class="col-sm-6 col-md-3 mb-4 mb-md-0">
           <div class="plan-card">
             <h3 class="plan-card-title">
-              Квартира 25 м.кв.
+              Квартира 45 м.кв.
             </h3>
             <span class="plan-card-subtitle">
-              Квартира 25 м.кв.
+              Квартира 45 м.кв.
             </span>
-            <div class="plan-card-image" style="background-image: url('./img/advantage-image.jpg');">
+            <div class="plan-card-image" style="background-image: url('./img/layout-45.png');" data-toggle="modal"
+              data-target="#layout2">
               <svg class="plan-card-zoom-icon" width="50" height="50">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#zoom-in"></use>
               </svg>
             </div>
             <span class="plan-card-price">Цена: 50 300 $</span>
             <span class="plan-card-price-message">Возможно в рассрочку</span>
-            <button class="button button-dark">Условия</button>
+            <button class="button button-dark" data-toggle="modal" data-target="#condition">Узнать условия</button>
           </div>
         </div>
+
         <div class="col-sm-6 col-md-3 mb-4 mb-sm-0">
           <div class="plan-card">
             <h3 class="plan-card-title">
-              Квартира 25 м.кв.
+              Квартира 65 м.кв.
             </h3>
             <span class="plan-card-subtitle">
-              Квартира 25 м.кв.
+              Квартира 65 м.кв.
             </span>
-            <div class="plan-card-image" style="background-image: url('./img/advantage-image.jpg');">
+            <div class="plan-card-image" style="background-image: url('./img/layout-65.png');" data-toggle="modal"
+              data-target="#layout3">
               <svg class="plan-card-zoom-icon" width="50" height="50">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#zoom-in"></use>
               </svg>
             </div>
             <span class="plan-card-price">Цена: 50 300 $</span>
             <span class="plan-card-price-message">Возможно в рассрочку</span>
-            <button class="button button-dark">Условия</button>
+            <button class="button button-dark" data-toggle="modal" data-target="#condition">Узнать условия</button>
           </div>
         </div>
+
         <div class="col-sm-6 col-md-3 mb-4 mb-sm-0">
           <div class="plan-card">
             <h3 class="plan-card-title">
-              Квартира 25 м.кв.
+              Квартира 89 м.кв.
             </h3>
             <span class="plan-card-subtitle">
-              Квартира 25 м.кв.
+              Квартира 89 м.кв.
             </span>
-            <div class="plan-card-image" style="background-image: url('./img/advantage-image.jpg');">
+            <div class="plan-card-image" style="background-image: url('./img/layout-89.png');" data-toggle="modal"
+              data-target="#layout4">
               <svg class="plan-card-zoom-icon" width="50" height="50">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#zoom-in"></use>
               </svg>
             </div>
             <span class="plan-card-price">Цена: 50 300 $</span>
             <span class="plan-card-price-message">Возможно в рассрочку</span>
-            <button class="button button-dark">Условия</button>
+            <button class="button button-dark" data-toggle="modal" data-target="#condition">Узнать условия</button>
           </div>
         </div>
       </div>
@@ -468,7 +478,9 @@
                   <svg width="80" height="80">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#kitchen"></use>
                   </svg>
-                  <h3 class="item-with-icon-title">Вывод под электро плиту</h3>
+                  <h3 class="item-with-icon-title">
+                    Вывод под электро плиту
+                  </h3>
                 </div>
               </div>
             </div>
@@ -528,8 +540,8 @@
         <div class="col-md-5 mt-4 mt-md-0">
           <h3 class="form-title">Есть вопросы? Оставьте заявку!</h3>
           <form class="form">
-            <input type="text" name="name" placeholder="Ваше имя">
-            <input type="tel" name="tel" placeholder="Ваш номер телефона">
+            <input type="text" name="name" placeholder="Ваше имя" />
+            <input type="tel" name="tel" placeholder="Ваш номер телефона" />
 
             <button type="submit" class="button">
               Заказать звонок
@@ -557,18 +569,172 @@
     </div>
   </footer>
 
+  <div class="product-modal modal fade" id="condition" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <button class="modal-close close" data-dismiss="modal" aria-label="Закрыть"></button>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="form-title">Есть вопросы? Оставьте заявку!</h3>
+            </div>
+
+            <div class="col-12">
+              <form class="form">
+                <input type="text" name="name" placeholder="Ваше имя" />
+                <input type="tel" name="tel" placeholder="Ваш номер телефона" />
+
+                <button type="submit" class="button">
+                  Заказать звонок
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-modal modal fade" id="layout1" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <button class="modal-close close" data-dismiss="modal" aria-label="Закрыть"></button>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="form-title">План квартиры</h3>
+            </div>
+            <div class="col-12">
+              <img src="./img/layout-25.png" alt="План квартиры">
+            </div>
+
+            <div class="col-12 mt-4">
+              <h3 class="form-title">План первого этажа</h3>
+            </div>
+            <div class="col-12">
+              <img src="./img/first-floor.jpg" alt="План квартиры">
+            </div>
+
+            <div class="col-12 mt-4">
+              <h3 class="form-title">План типового этажа</h3>
+            </div>
+            <div class="col-12">
+              <img src="./img/general-floor.jpg" alt="План квартиры">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-modal modal fade" id="layout2" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <button class="modal-close close" data-dismiss="modal" aria-label="Закрыть"></button>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="form-title">План квартиры</h3>
+            </div>
+            <div class="col-12">
+              <img src="./img/layout-45.png" alt="План квартиры">
+            </div>
+
+            <div class="col-12 mt-4">
+              <h3 class="form-title">План первого этажа</h3>
+            </div>
+            <div class="col-12">
+              <img src="./img/first-floor.jpg" alt="План квартиры">
+            </div>
+
+            <div class="col-12 mt-4">
+              <h3 class="form-title">План типового этажа</h3>
+            </div>
+            <div class="col-12">
+              <img src="./img/general-floor.jpg" alt="План квартиры">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-modal modal fade" id="layout3" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <button class="modal-close close" data-dismiss="modal" aria-label="Закрыть"></button>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="form-title">План квартиры</h3>
+            </div>
+            <div class="col-12">
+              <img src="./img/layout-65.png" alt="План квартиры">
+            </div>
+
+            <div class="col-12 mt-4">
+              <h3 class="form-title">План первого этажа</h3>
+            </div>
+            <div class="col-12">
+              <img src="./img/first-floor.jpg" alt="План квартиры">
+            </div>
+
+            <div class="col-12 mt-4">
+              <h3 class="form-title">План типового этажа</h3>
+            </div>
+            <div class="col-12">
+              <img src="./img/general-floor.jpg" alt="План квартиры">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-modal modal fade" id="layout4" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <button class="modal-close close" data-dismiss="modal" aria-label="Закрыть"></button>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="form-title">План квартиры</h3>
+            </div>
+            <div class="col-12">
+              <img src="./img/layout-89.png" alt="План квартиры">
+            </div>
+
+            <div class="col-12 mt-4">
+              <h3 class="form-title">План первого этажа</h3>
+            </div>
+            <div class="col-12">
+              <img src="./img/first-floor.jpg" alt="План квартиры">
+            </div>
+
+            <div class="col-12 mt-4">
+              <h3 class="form-title">План типового этажа</h3>
+            </div>
+            <div class="col-12">
+              <img src="./img/general-floor.jpg" alt="План квартиры">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   @@include('_include/page_bottom.html')
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
   <script>
-    var mySwiper = new Swiper('.swiper-container', {
-      slidesPerView: 'auto',
+    var mySwiper = new Swiper(".swiper-container", {
+      slidesPerView: "auto",
       loop: true,
       navigation: {
-        nextEl: '.slider-next',
-        prevEl: '.slider-prev',
-      },
-    })
+        nextEl: ".slider-next",
+        prevEl: ".slider-prev"
+      }
+    });
   </script>
 </body>
 
