@@ -540,8 +540,8 @@
         <div class="col-md-5 mt-4 mt-md-0">
           <h3 class="form-title">Есть вопросы? Оставьте заявку!</h3>
           <form class="form">
-            <input type="text" name="name" placeholder="Ваше имя" />
-            <input type="tel" name="tel" placeholder="Ваш номер телефона" />
+            <input type="text" name="name" placeholder="Ваше имя" required />
+            <input type="tel" name="tel" placeholder="Ваш номер телефона" required />
 
             <button type="submit" class="button">
               Заказать звонок
@@ -581,8 +581,8 @@
 
             <div class="col-12">
               <form class="form">
-                <input type="text" name="name" placeholder="Ваше имя" />
-                <input type="tel" name="tel" placeholder="Ваш номер телефона" />
+                <input type="text" name="name" placeholder="Ваше имя" required />
+                <input type="tel" name="tel" placeholder="Ваш номер телефона" required />
 
                 <button type="submit" class="button">
                   Заказать звонок
@@ -727,13 +727,32 @@
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
   <script>
-    var mySwiper = new Swiper(".swiper-container", {
+    var slider = new Swiper(".swiper-container", {
       slidesPerView: "auto",
       loop: true,
       navigation: {
         nextEl: ".slider-next",
         prevEl: ".slider-prev"
       }
+    });
+
+    $("form").submit(function (e) {
+      e.preventDefault();
+      $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: $(this).serialize(),
+        error: function (request, errorStatus, errorThrown) {
+          console.error(request);
+          console.error(errorStatus);
+          console.error(errorThrown);
+        },
+        success: function () {
+          $("input").val("");
+          $('#condition').modal('hide');
+          alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+        }
+      });
     });
   </script>
 </body>
